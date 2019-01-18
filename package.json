@@ -6,8 +6,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.6",
+    "emotion-server": "^10.0.6",
     "next": "^7.0.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "babel-plugin-emotion": "^10.0.6"
   }
 }
