@@ -1,16 +1,23 @@
-import React from 'react'
+import React from 'react';
 
 /** @jsx jsx */
-import { jsx, Global, css } from '@emotion/core'
+import { jsx, Global, css } from '@emotion/core';
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <>
       <Global
         styles={css`
           html {
             box-sizing: border-box;
             font-size: 10px;
+          }
+
+          html,
+          body,
+          #__next {
+            height: 100%;
+            width: 100%;
           }
 
           *,
@@ -29,6 +36,7 @@ const Layout = ({ children }) => {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
               Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
               sans-serif;
+            min-height: 100%;
           }
 
           a {
@@ -42,8 +50,8 @@ const Layout = ({ children }) => {
         `}
       />
       {children}
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

@@ -1,16 +1,22 @@
 {
   "name": "tobiastimm.eu",
+  "description": "My personal website",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "dependencies": {
     "@emotion/core": "^10.0.6",
     "emotion-server": "^10.0.6",
     "next": "^7.0.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-feather": "^1.1.6"
   },
   "devDependencies": {
     "babel-plugin-emotion": "^10.0.6"

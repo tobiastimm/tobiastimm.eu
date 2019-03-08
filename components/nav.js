@@ -1,8 +1,8 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core'
-import elevation from './styles/elevation'
+import { jsx, css } from '@emotion/core';
+import elevation from './styles/elevation';
 
 const Nav = () => (
   <nav
@@ -23,7 +23,7 @@ const Nav = () => (
     <div
       css={css`
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding-top: 0.4rem;
         padding-bottom: 0.4rem;
         width: 100%;
@@ -33,14 +33,14 @@ const Nav = () => (
         margin: 0 auto;
       `}
     >
-      <h4
+      <h1
         css={css`
           margin: 0;
         `}
       >
         Tobias Timm
-      </h4>
-      <ul
+      </h1>
+      {/* <ul
         css={css`
           margin: 0;
           display: flex;
@@ -52,8 +52,8 @@ const Nav = () => (
             margin: 0 1.5rem;
           }
         `}
-      >
-        <li>
+      > */}
+      {/* <li>
           <Link prefetch href="/blog">
             <a>Blog</a>
           </Link>
@@ -62,15 +62,15 @@ const Nav = () => (
           <Link prefetch href="/cv">
             <a>Curriculum Vitae</a>
           </Link>
-        </li>
-        <li>
-          <Link prefetch href="/cv">
+        </li> */}
+      {/* <li>
+          <Link prefetch href="/contact">
             <a>Contact</a>
           </Link>
-        </li>
-      </ul>
+        </li> */}
+      {/* </ul> */}
     </div>
   </nav>
-)
+);
 
-export default Nav
+export default Nav;

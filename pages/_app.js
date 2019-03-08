@@ -1,27 +1,29 @@
-import React from 'react'
-import App, { Container } from 'next/app'
-import Layout from '../components/Layout'
+import React from 'react';
+import App, { Container } from 'next/app';
+import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 
 export default class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {
-    let pageProps = {}
+    let pageProps = {};
 
     if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
+      pageProps = await Component.getInitialProps(ctx);
     }
 
-    return { pageProps }
+    return { pageProps };
   }
 
   render() {
-    const { Component, pageProps } = this.props
+    const { Component, pageProps } = this.props;
 
     return (
       <Container>
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        {/* <Footer /> */}
       </Container>
-    )
+    );
   }
 }
