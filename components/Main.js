@@ -41,7 +41,7 @@ const Main = () => {
 
           <h4>Hey I'm Tobi! 👋</h4>
           <p>
-            A software developer living in 🇩🇪 Augsburg. My career started as a
+            A software developer living in 🇩🇪 Augsburg. My career started with
             C#, but I felt more comfortable in the Java section. During my time
             as a Java dev, I've created a prototype project with AngularJS and
             fell in ❤️ with the front-end development.
