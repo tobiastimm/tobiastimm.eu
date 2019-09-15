@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
-import Head from '../components/head';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
-import Main from '../components/Main';
+import React from 'react'
+import Link from 'next/link'
+import Head from '../components/head'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+import Main from '../components/Main'
 
 const Home = () => (
   <>
@@ -11,6 +11,6 @@ const Home = () => (
     <Nav />
     <Main />
   </>
-);
+)
 
-export default Home;
+export default Home

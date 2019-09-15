@@ -33,13 +33,16 @@ const Nav = () => (
         margin: 0 auto;
       `}
     >
+      <Link href="/">
       <h1
         css={css`
           margin: 0;
+          cursor: pointer;
         `}
       >
-        Tobias Timm
+        <a>Tobias Timm</a>
       </h1>
+      </Link>
       {/* <ul
         css={css`
           margin: 0;

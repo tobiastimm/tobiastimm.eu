@@ -1,9 +1,9 @@
-import React from 'react';
-import Link from 'next/link';
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
-import { GitHub, Linkedin, Twitter } from 'react-feather';
-import elevation from './styles/elevation';
+import { jsx, css } from '@emotion/core'
+import Link from 'next/link'
+import { GitHub, Linkedin, Twitter, Info } from 'react-feather'
+import elevation from './styles/elevation'
+import List from './List'
 
 const Main = () => {
   return (
@@ -51,33 +51,7 @@ const Main = () => {
             GraphQL and all the other cool stuff 😉
           </p>
         </div>
-        <ul
-          css={css`
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-
-            li {
-              text-align: center;
-              transform: translate3d(0, 0, 0);
-              cursor: pointer;
-              padding: 1rem;
-            }
-            a {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              vertical-align: middle;
-
-              svg {
-                margin-right: 1rem;
-              }
-            }
-          `}
-        >
+        <List>
           <li>
             <a href="https://github.com/tobiastimm">
               <GitHub /> GitHub
@@ -93,10 +67,17 @@ const Main = () => {
               <Twitter /> Twitter
             </a>
           </li>
-        </ul>
+        </List>
+        <List align="center">
+          <li>
+            <Link href="/imprint">
+              <a>Imprint</a>
+            </Link>
+          </li>
+        </List>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Main;
+export default Main
